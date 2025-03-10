@@ -1,0 +1,22 @@
+.form {
+  &__wrapper {
+    @apply mb-5;
+  }
+
+  &__label {
+    @apply block font-bold mb-1.5 sp:text-sm;
+  }
+
+  &__input,
+  &__select {
+    @apply w-full h-10 rounded border focus:border-blue-500 focus:ring-0;
+  }
+
+  &__error {
+    @apply text-xs text-red-600 font-medium mt-1;
+  }
+}
+
+.menu-item {
+  @apply hover:font-bold hover:cursor-pointer block text-center w-[80px];
+}

@@ -1,0 +1,12 @@
+.link {
+    @apply inline-block text-secondary/85 font-medium hover:text-secondary hover:underline hover:underline-offset-4;
+  
+    &--underlined {
+      @apply underline underline-offset-4;
+    }
+  
+    @screen sp {
+      @apply text-sm;
+    }
+  }
+  

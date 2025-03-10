@@ -1,0 +1,33 @@
+/* Initial state: positioned slightly left, hidden */
+.slide-in-left {
+  transform: translateX(-60px) scale(0.95);  /* Slide & subtle shrink effect */
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.8s ease-out;
+  will-change: transform, opacity;
+  backface-visibility: hidden;  /* Improve rendering performance */
+}
+
+/* Active state: slides to its final position, fully visible */
+.slide-in-left-active {
+  transform: translateX(0) scale(1);  /* Slide into place & restore scale */
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.8s ease-in;
+  will-change: transform, opacity;
+  opacity: 1;
+}
+
+/* Stagger effect for cascading animations */
+.staggered:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.staggered:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.staggered:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.staggered:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.staggered:nth-child(5) {
+  transition-delay: 0.5s;
+}

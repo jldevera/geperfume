@@ -1,0 +1,45 @@
+.card {
+  @apply mx-auto bg-white shadow-md rounded mb-8 last:mb-0 scroll-mt-24;
+
+  &__body {
+    @apply max-h-max overflow-hidden;
+  }
+
+  &__content {
+    @apply p-5;
+  }
+
+  &__title {
+    @apply block mb-5 text-center text-3xl sp:text-2xl font-bold text-primary;
+  }
+
+  &__heading-wrapper {
+    @apply flex gap-3 items-center justify-between pb-1.5 mb-5 border-b-2 border-primary;
+
+    @screen sp {
+      & .button {
+        @apply w-auto;
+      }
+    }
+
+    &--justify-start {
+      @apply justify-start gap-1;
+
+      i {
+        @apply text-2xl text-secondary;
+      }
+    }
+  }
+
+  &__heading {
+    @apply block text-primary text-lg font-bold;
+  }
+
+  &--sm {
+    @apply max-w-lg;
+  }
+
+  &--md {
+    @apply max-w-4xl;
+  }
+}
