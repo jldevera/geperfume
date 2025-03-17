@@ -1,1 +1,0 @@
-import{_ as n,u as a,c as r,a as s,o as l}from"./CySaxsVB.js";a();const u={},i={class:"flex justify-between p-3 items-center"};function p(o,e,c,m,d,f){return l(),r("div",i,[e[1]||(e[1]=s("p",null,"Welcome Admin!",-1)),s("span",{class:"menu-item",onClick:e[0]||(e[0]=(...t)=>o.logout&&o.logout(...t))},"Logout")])}const $=n(u,[["render",p]]);export{$ as default};
