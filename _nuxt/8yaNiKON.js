@@ -1,1 +1,0 @@
-import{ai as t,aa as n}from"./efqfVIMy.js";import{u as o}from"./bfETQQoc.js";const d=t((a,r)=>{const e=o("session_id"),s=o("session_expiry"),i=s.value&&new Date>new Date(s.value);if(i)return e.value=null,s.value=null,n("/login");if(a.path==="/login"&&e.value&&!i)return n("/admin");if(a.path==="/admin"&&(!e.value||i))return n("/login")});export{d as default};
