@@ -1,0 +1,1 @@
+import{aj as t,ab as n}from"./BA_7HMDr.js";import{u as o}from"./D3y2pa9F.js";const d=t((a,r)=>{const e=o("session_id"),s=o("session_expiry"),i=s.value&&new Date>new Date(s.value);if(i)return e.value=null,s.value=null,n("/login");if(a.path==="/login"&&e.value&&!i)return n("/admin");if(a.path==="/admin"&&(!e.value||i))return n("/login")});export{d as default};
